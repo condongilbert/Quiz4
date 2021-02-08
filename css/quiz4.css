@@ -163,10 +163,17 @@ nav.menu ul li a:hover:after {
         margin-left: 2rem;
     }
     nav ul {
-        flex-direction: column;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        display: none !important;
+        text-align: center;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin:0 auto;
+        top: 5.6em;
+        width: 80%;
+        left: 10%;
+        position: absolute;
+        background-color: rgba(0,0,0,.8);
+        max-height: 0;
+        overflow: hidden;
     }
     /* body>header>nav.menu>label.label> {
         display: block;
@@ -191,7 +198,7 @@ nav.menu ul li a:hover:after {
     nav li ul {
         /* visibility: hidden; */
     }
-    #toggle:checked+ul.nav{
+    #toggle:checked+.nav{
         max-height: 300px;
     }
 
